@@ -1,0 +1,16 @@
+public class Powerfunction {
+    public static int powerFunction(int a,int b){
+        int res = 1;
+        if(b==1)
+            return a;
+        else
+            res = a*powerFunction(a,b-1);
+        return res;
+    }
+    public static void main(String[] args) {
+        int a = 2;
+        int b = 3;
+        int res = powerFunction(a,b);
+        System.out.println(res);
+    }
+}
